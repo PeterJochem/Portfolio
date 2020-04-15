@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/corkboard/static/css/main.76509e48.chunk.css",
-    "main.js": "/corkboard/static/js/main.604bfbe2.chunk.js",
-    "main.js.map": "/corkboard/static/js/main.604bfbe2.chunk.js.map",
-    "runtime-main.js": "/corkboard/static/js/runtime-main.309592cd.js",
-    "runtime-main.js.map": "/corkboard/static/js/runtime-main.309592cd.js.map",
-    "static/js/2.c3c5071f.chunk.js": "/corkboard/static/js/2.c3c5071f.chunk.js",
-    "static/js/2.c3c5071f.chunk.js.map": "/corkboard/static/js/2.c3c5071f.chunk.js.map",
-    "index.html": "/corkboard/index.html",
-    "precache-manifest.7ff6ba360f3a2df16db5bff9095538ca.js": "/corkboard/precache-manifest.7ff6ba360f3a2df16db5bff9095538ca.js",
-    "service-worker.js": "/corkboard/service-worker.js",
-    "static/css/main.76509e48.chunk.css.map": "/corkboard/static/css/main.76509e48.chunk.css.map",
-    "static/js/2.c3c5071f.chunk.js.LICENSE.txt": "/corkboard/static/js/2.c3c5071f.chunk.js.LICENSE.txt",
-    "static/media/links.yaml": "/corkboard/static/media/links.554fff83.yaml"
+    "main.css": "/React_Tutorial/static/css/main.76509e48.chunk.css",
+    "main.js": "/React_Tutorial/static/js/main.604bfbe2.chunk.js",
+    "main.js.map": "/React_Tutorial/static/js/main.604bfbe2.chunk.js.map",
+    "runtime-main.js": "/React_Tutorial/static/js/runtime-main.4dc5790e.js",
+    "runtime-main.js.map": "/React_Tutorial/static/js/runtime-main.4dc5790e.js.map",
+    "static/js/2.c3c5071f.chunk.js": "/React_Tutorial/static/js/2.c3c5071f.chunk.js",
+    "static/js/2.c3c5071f.chunk.js.map": "/React_Tutorial/static/js/2.c3c5071f.chunk.js.map",
+    "index.html": "/React_Tutorial/index.html",
+    "precache-manifest.74fd951143fa914d1ee13fe0f0fe0544.js": "/React_Tutorial/precache-manifest.74fd951143fa914d1ee13fe0f0fe0544.js",
+    "service-worker.js": "/React_Tutorial/service-worker.js",
+    "static/css/main.76509e48.chunk.css.map": "/React_Tutorial/static/css/main.76509e48.chunk.css.map",
+    "static/js/2.c3c5071f.chunk.js.LICENSE.txt": "/React_Tutorial/static/js/2.c3c5071f.chunk.js.LICENSE.txt",
+    "static/media/links.yaml": "/React_Tutorial/static/media/links.554fff83.yaml"
   },
   "entrypoints": [
-    "static/js/runtime-main.309592cd.js",
+    "static/js/runtime-main.4dc5790e.js",
     "static/js/2.c3c5071f.chunk.js",
     "static/css/main.76509e48.chunk.css",
     "static/js/main.604bfbe2.chunk.js"

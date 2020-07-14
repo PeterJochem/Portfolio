@@ -1,0 +1,89 @@
+body {
+  //font: 70px "Century Gothic", Futura, sans-serif;
+  //font-weight: 900;
+  background-color: #ccc33;
+  //background-size: cover;
+  //margin: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: left;
+
+}
+
+
+.Corkboard, a, li {
+  text-decoration: none;  
+  font: 20px "Century Gothic", Futura, sans-serif;
+  color:white;
+  font-weight: 900;
+  background-image: none;
+  content:"";
+  
+  //margin:auto;
+  margin: 2px;
+  display: flex;
+  justify-content: left;
+
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  //z-index:-1;
+  //background-size: contain;
+  background-repeat: no-repeat;
+  //background-position: center;
+
+}
+
+
+
+ol, ul {
+  //padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+  //margin: center;
+  //width: 50%;
+  //display: flex;
+  //justify-content: center;
+}
+
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 20vh;
+  //margin-right: -1px;
+  //margin-top: -1px;
+  margin: center;
+  //padding: 0;
+  text-align: center;
+  width: 20vh;
+  background-image: url("https://peterjochem.github.io/corkboard/The_GAN_Zoo.jpg");
+  background-size: cover;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+

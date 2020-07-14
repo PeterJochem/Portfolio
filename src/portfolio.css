@@ -1,0 +1,222 @@
+body {
+	background-color: #ccc33;
+
+	width: 100vw;
+	height: 100vh;
+	font: 50vw "Century Gothic", Futura, sans-serif;
+	text-align: center;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+}
+
+.Banner { 
+	height: 15vh;
+	width: 100vw;
+
+	font: "Century Gothic", Futura, sans-serif;
+	color: white; 
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://peterjochem.github.io/corkboard/The_GAN_Zoo.jpg");
+	background-size: cover;
+	font: 5vw "Century Gothic"
+
+}
+
+.bannerName {
+	height: 60%;
+        width: 100%;
+	/* display: flex;
+  	justify-content: center; */
+	align-items: center;
+	text-align:center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.moreInfo {
+	height: 40%;
+        width: 100%;
+        text-align:center;	
+	/* display: flex;
+  	justify-content: center; */
+  	align-items: center;
+	/* font: 20px "Century Gothic"; */
+	href: "";
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 638px) {
+.myResumeLink {
+	height: 40%;
+        width: 100%;
+        font: 3vh "Century Gothic";	
+	text-align:right;
+	vertical-align: top;
+	padding: 1%;
+}
+
+.moreProjectsLink {
+	height: 40%;
+        width: 100%;
+        font: 3vh "Century Gothic";
+	text-align: left;
+	vertical-align: top;
+	padding: 1%;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 639px) {
+.myResumeLink {
+        height: 40%;
+        width: 100%;
+        font: 1.5vw "Century Gothic";
+        text-align:right;
+	vertical-align: top;
+        padding: 1%;
+}
+
+.moreProjectsLink {
+        height: 40%;
+        width: 100%;
+        font: 1.5vw "Century Gothic";
+        text-align: left;
+	vertical-align: top;
+        padding: 1%;
+}
+}
+
+
+/* DONT FORGET TO SET DIV PROPERTIES! */
+div {
+	height: 100%;
+	width: 100%;
+}
+
+.portfolio {
+	
+	height: 100%;
+	width: 100%; 
+
+	/* This adds space between the banner image and the portfolio (ie grid of projects)*/
+	margin-top: 2%;
+
+	/* display: flex;*/
+        align-items: center;
+
+	/* vertical-align: middle; */
+
+	font: 5vw "Century Gothic", Futura, sans-serif;
+}
+
+.Post {
+	text-decoration: none;  
+	font: 1vw "Century Gothic", Futura, sans-serif;
+	color:white;
+	font-weight: 900;
+	content:"";
+	height: 100%;
+	width: 100%;
+}
+
+
+.GridOfPosts {
+	width: 70%;
+	height: 70%;
+	justify-items: center;
+	margin-right: auto;
+        margin-left: auto;
+	padding: 0%;
+}
+
+
+.Box {
+	/*margin: auto; */
+	/* padding: 0px; */
+	background-size: cover;
+	width: 80%; 
+	height: 80%; 
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.grid-item {
+	background-size: cover; 
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 100px) {
+.grid-container {
+	display: grid;
+        /* grid-gap: 20px; */
+        grid-gap: 1vh;
+        /* This puts 4 columns in a row */
+        grid-template-columns: auto auto;
+        font: 1vw "Century Gothic", Futura, sans-serif;
+        text-align: center;
+        font-weight: 600;
+
+        margin-left: auto;
+        margin-right: auto;
+        /*width: 80%;
+        height: 80%;*/
+        justify-items: center;
+
+        /* This forces the grid elements to be square */
+        grid-template-columns: 1fr 1fr;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+.grid-container {
+	display: grid;
+	/* grid-gap: 20px; */
+        grid-gap: 1vw;	
+	/* This puts 4 columns in a row */
+	grid-template-columns: auto auto auto auto;
+	font: 1.5vw "Century Gothic", Futura, sans-serif;
+	text-align: center; 
+	font-weight: 600;
+
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 80%;
+	height: 80%;*/
+	justify-items: center;
+	
+	/* This forces the grid elements to be square */
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}  
+
+
+ol, ul {
+	//padding-left: 30px;
+}
+
+.square:focus {
+	outline: none;
+}
+
+.kbd-navigation .square:focus {
+	background: #ddd;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+

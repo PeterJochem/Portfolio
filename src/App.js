@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { render } from "react-dom";
+import ReactDOM from 'react-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Site from "./index.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    constructor(){
+    super();
+    this.state = {
+     results: {}
+    }
+    }
+ 
+   render () {
+	return (
+		<div className="App">
+		<div className="Site">
+		<Site />
+		</div>
+		</div>
+	)
+   }
 }
-
 export default App;
+// ReactDOM.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>, document.getElementById('root'));

@@ -1,17 +1,183 @@
-import React from 'react';
+import React from "react";
+import { render } from "react-dom";
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import {BrowserRouter, Route} from 'react-router-dom';
+import { HashRouter, Route, Link, Switch} from "react-router-dom";
+import './index.css'; // Tell webpack that Button.js uses these styles
+import './portfolio.css';
+import Portfolio from "./portfolio";
+import App from "./App.js";
+//import "./corkboard.css"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const page1 = {
+  projects: [
+    {
+        name: "Triple Pendulum Simulation",
+        url: "https://github.com/PeterJochem/TriplePendulum",
+        im_url: "https://peterjochem.github.io/myImages/pend.gif"
+    },
+     {
+        name: "Mobile Manipulator",
+        url: "https://github.com/PeterJochem/Mobile_Manipulator",
+        im_url: "https://peterjochem.github.io/myImages/kuka.gif"
+    },
+    {
+        name: "Terminator",
+        url: "https://github.com/ME495-EmbeddedSystems/final-project-terminator",
+        im_url: "https://peterjochem.github.io/myImages/terminator.png"
+     },
+     {
+        name: "Chess AI",
+        url: "https://github.com/PeterJochem/Chess_AI",
+        im_url: "https://peterjochem.github.io/myImages/chess.gif"
+    },
+    {
+        name: "Neural Network Learns to Play Snake",
+        url: "https://github.com/PeterJochem/Snake",
+        im_url: "https://peterjochem.github.io/myImages/Snake.png"
+    },
+     {
+        name: "RRT",
+        url: "https://github.com/PeterJochem/RRT",
+        im_url: "https://peterjochem.github.io/myImages/all_Points_3.png"
+    },
+    {
+        name: "Sawyer Ping Pong",
+        url: "https://github.com/PeterJochem/Sawyer_Ping_Pong",
+        im_url: "https://peterjochem.github.io/myImages/ping_trajectory.png"
+     },
+      {
+        name: "DeepQ Learning",
+        url: "https://github.com/PeterJochem/Grid_World_RL",
+        im_url: "https://peterjochem.github.io/myImages/NN_Large.png"
+    },
+]
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+const page2 = {
+  projects: [
+    {
+        name: "Cart Pole Reinforcement Learning",
+        url: "https://github.com/PeterJochem/Cart_Pole_RL",
+        im_url: "https://peterjochem.github.io/myImages/cartPole.gif"
+    },
+     {
+        name: "CBirch 97 Head Tracking",
+        url: "https://github.com/PeterJochem/CBirch_97",
+        im_url: "https://peterjochem.github.io/myImages/CBirch97.gif"
+    },
+    {
+        name: "Canny Edge Detector",
+        url: "https://github.com/PeterJochem/CannyEdgeDetector",
+        im_url: "https://peterjochem.github.io/myImages/Lena_Processed.png"
+    },
+    {
+        name: "Acrobot Reinforcement Learning",
+        url: "https://github.com/PeterJochem/Acrobot",
+        im_url: "https://peterjochem.github.io/myImages/learnedPolicy.gif"
+    },
+    {
+        name: "Generative Adversarial Network",
+        url: "https://github.com/PeterJochem/MNIST_GAN",
+        im_url: "https://peterjochem.github.io/myImages/DCGAN_Results.png"
+    }
+  ]
+}
+
+
+//const node = document.getElementById("root");
+class Site extends React.Component {
+
+// Set the browser tab name
+componentDidMount(){
+    document.title = "Peter Jochem"
+}
+
+constructor(props) {
+    super(props);
+    this.state = {
+      someBoolean: false,
+      game_status: "game still on",
+    };
+  }
+
+  render() {
+    return (
+	    <HashRouter>
+	    <Switch>
+       <div>
+          
+	    <Route exact path='/' render={() => (
+            	
+		<div>
+			<div className = "Banner"> 	
+		  	<div className = "bannerName"> Peter Jochem 
+		  	</div>
+		   	<div className = "moreInfo">
+		  	
+			<Link className = "myResumeLink" to ="/ResumePage" >
+                                Resume
+                        </Link>
+
+		  	<Link className = "moreProjectsLink" to ="/projects2" >  
+		    		More Projects
+		    	</Link>
+		        </div>	
+
+		</div>
+
+		<div className = "portfolio"> <Portfolio  pageNumber = {page1} />  </div>	
+
+		</div>	
+
+    		)} />
+		
+	     <Route exact path='/projects2' render={() => (
+                <div>
+			 <div className = "Banner">
+                        <div className = "bannerName"> Peter Jochem
+                        </div>
+                        <div className = "moreInfo">
+
+		     	<Link className = "myResumeLink" to ="/ResumePage" >
+                        	Resume
+			</Link>
+
+		     	<Link className = "moreProjectsLink" to ="/" >
+                                More Projects
+                        </Link>
+		     	
+                        </div>
+                        <div className = "BannerImage"> </div>
+                </div>
+                
+		<div className = "portfolio"> <Portfolio  pageNumber = {page2} />  </div>		
+                
+		</div>
+
+                )} />
+
+	    <Route exact path='/ResumePage' render={() => (
+
+                <div className = "resumeBackground">
+		    	<iframe id = "myResumeFrame" src="http://docs.google.com/viewer?url=https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf&embedded=true" width="600" height="780" framebordr="0"></iframe>
+		    </div>
+                )} />
+
+
+	  </div>
+	  
+	  	</Switch>
+	  </HashRouter>
+    );
+  }
+}
+export default Site;
+
+// ========================================
+
+ReactDOM.render( <App />, document.getElementById('root') );
+
+// ReactDOM.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>, document.getElementById("root"));
+

@@ -1,0 +1,7 @@
+npm start 
+
+npm run deploy
+
+Displaying a pdf on site
+put the pdf on github
+go to file. click view source, you'll see the github-raw-content<stuff>/Resume.pdf link

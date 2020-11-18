@@ -96,7 +96,6 @@ Post.defaultProps = {
 export default class Portfolio extends React.Component {
        constructor(props) {
        		super(props);
-
                 this.componentDidMount = this.componentDidMount.bind(this);
         }
 
@@ -115,8 +114,7 @@ export default class Portfolio extends React.Component {
 	 
 	      <div>
 
-	      <div className = "portfolio">
-	     
+	      <div className = "portfolio"> 
 	      		<GridOfPosts pageNumber={this.props.pageNumber} />	
 	      </div>
 	      </div>

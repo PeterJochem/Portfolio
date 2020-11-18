@@ -6,6 +6,7 @@ import { HashRouter, Route, Link, Switch} from "react-router-dom";
 import './index.css'; // Tell webpack that Button.js uses these styles
 import './portfolio.css';
 import Portfolio from "./portfolio";
+import Deep_RL_Description from "./DescriptionPages/Deep_RL_Description"
 import App from "./App.js";
 //import "./corkboard.css"
 
@@ -18,12 +19,7 @@ const page1 = {
         im_url: "https://raw.githubusercontent.com/PeterJochem/Turtlebot_Navigation/master/images/tbot_pentagon.gif"
     },
     {
-        name: "Triple Pendulum",
-        url: "https://github.com/PeterJochem/TriplePendulum",
-        im_url: "https://peterjochem.github.io/myImages/pend.gif"
-    },
-    {
-        name: "Deep_RL",
+        name: "Deep RL",
         url: "https://github.com/PeterJochem/Deep_RL",
         im_url: "https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/hopper_learned_policy_cropped.gif"
     },
@@ -52,9 +48,13 @@ const page1 = {
         url: "https://github.com/PeterJochem/Grid_World_RL",
         im_url: "https://peterjochem.github.io/myImages/NN_Large.png"
     },
+    {
+       	name: "Triple Pendulum",
+        url: "https://github.com/PeterJochem/TriplePendulum",
+        im_url: "https://peterjochem.github.io/myImages/pend.gif"
+    },
 ]
 }
-
 
 const page2 = {
   projects: [
@@ -74,9 +74,9 @@ const page2 = {
         im_url: "https://peterjochem.github.io/myImages/Lena_Processed.png"
     },
     {
-        name: "Generative Adversarial Network",
+        name: "GAN",
         url: "https://github.com/PeterJochem/MNIST_GAN",
-        im_url: "https://peterjochem.github.io/myImages/DCGAN_Results.png"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/GAN.gif"
     },
     {
         name: "Neural Network Snake",
@@ -159,17 +159,21 @@ constructor(props) {
 
                 )} />
 
-	    <Route exact path='/ResumePage' render={() => (
-
-                <div className = "resumeBackground">
-		    	<iframe id = "myResumeFrame" src="http://docs.google.com/viewer?url=https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf&embedded=true" width="600" height="780" framebordr="0"></iframe>
-		    </div>
+	    	<Route exact path='/Deep_RL' render={() => (
+                        <div className = "portfolio"> <Deep_RL_Description /> </div>
                 )} />
 
 
-	  </div>
+	    	<Route exact path='/ResumePage' render={() => (
+
+                <div className = "resumeBackground">
+		    	<iframe id = "myResumeFrame" src="http://docs.google.com/viewer?url=https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf&embedded=true" width="600" height="780" frameborder="0"></iframe>
+		    </div>
+                )} />
 	  
-	  	</Switch>
+	    
+	  </div>
+	  </Switch>
 	  </HashRouter>
     );
   }

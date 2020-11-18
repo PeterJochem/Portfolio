@@ -147,6 +147,10 @@ div {
 	flex-wrap: wrap;
 }
 
+.box {
+	font: 1vh, Futura, sans-serif;
+	//font-size: 1.7vw;
+}
 
 .grid-item {
 	background-size: cover; 

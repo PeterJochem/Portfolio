@@ -11,12 +11,23 @@ import App from "./App.js";
 
 const page1 = {
   projects: [
+    
     {
-        name: "Triple Pendulum Simulation",
+        name: "ROS Navigation",
+        url: "https://github.com/PeterJochem/Turtlebot_Navigation",
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Turtlebot_Navigation/master/images/tbot_pentagon.gif"
+    },
+    {
+        name: "Triple Pendulum",
         url: "https://github.com/PeterJochem/TriplePendulum",
         im_url: "https://peterjochem.github.io/myImages/pend.gif"
     },
-     {
+    {
+        name: "Deep_RL",
+        url: "https://github.com/PeterJochem/Deep_RL",
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/hopper_learned_policy_cropped.gif"
+    },
+    {
         name: "Mobile Manipulator",
         url: "https://github.com/PeterJochem/Mobile_Manipulator",
         im_url: "https://peterjochem.github.io/myImages/kuka.gif"
@@ -30,23 +41,13 @@ const page1 = {
         name: "Chess AI",
         url: "https://github.com/PeterJochem/Chess_AI",
         im_url: "https://peterjochem.github.io/myImages/chess.gif"
-    },
-    {
-        name: "Neural Network Learns to Play Snake",
-        url: "https://github.com/PeterJochem/Snake",
-        im_url: "https://peterjochem.github.io/myImages/Snake.png"
-    },
-     {
-        name: "RRT",
-        url: "https://github.com/PeterJochem/RRT",
-        im_url: "https://peterjochem.github.io/myImages/all_Points_3.png"
-    },
+    }, 
     {
         name: "Sawyer Ping Pong",
         url: "https://github.com/PeterJochem/Sawyer_Ping_Pong",
         im_url: "https://peterjochem.github.io/myImages/ping_trajectory.png"
      },
-      {
+     {
         name: "DeepQ Learning",
         url: "https://github.com/PeterJochem/Grid_World_RL",
         im_url: "https://peterjochem.github.io/myImages/NN_Large.png"
@@ -58,12 +59,12 @@ const page1 = {
 const page2 = {
   projects: [
     {
-        name: "Cart Pole Reinforcement Learning",
-        url: "https://github.com/PeterJochem/Cart_Pole_RL",
-        im_url: "https://peterjochem.github.io/myImages/cartPole.gif"
+        name: "RRT",
+        url: "https://github.com/PeterJochem/RRT",
+        im_url: "https://peterjochem.github.io/myImages/all_Points_3.png"
     },
      {
-        name: "CBirch 97 Head Tracking",
+        name: "CBirch 97",
         url: "https://github.com/PeterJochem/CBirch_97",
         im_url: "https://peterjochem.github.io/myImages/CBirch97.gif"
     },
@@ -73,14 +74,14 @@ const page2 = {
         im_url: "https://peterjochem.github.io/myImages/Lena_Processed.png"
     },
     {
-        name: "Acrobot Reinforcement Learning",
-        url: "https://github.com/PeterJochem/Acrobot",
-        im_url: "https://peterjochem.github.io/myImages/learnedPolicy.gif"
-    },
-    {
         name: "Generative Adversarial Network",
         url: "https://github.com/PeterJochem/MNIST_GAN",
         im_url: "https://peterjochem.github.io/myImages/DCGAN_Results.png"
+    },
+    {
+        name: "Neural Network Snake",
+        url: "https://github.com/PeterJochem/Snake",
+        im_url: "https://peterjochem.github.io/myImages/Snake.png"
     }
   ]
 }
@@ -175,9 +176,6 @@ constructor(props) {
 }
 export default Site;
 
-// ========================================
-
 ReactDOM.render( <App />, document.getElementById('root') );
-
 // ReactDOM.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>, document.getElementById("root"));
 

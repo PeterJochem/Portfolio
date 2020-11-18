@@ -1,3 +1,12 @@
+## Notes on How to Setup the Environment
+We need nodejs at version 10 but apt will install verison 8.1. Follow the below commands to setup the environment. You will need to do this if you clone the react app and want to work on it. 
+```sudo apt update``` <br />
+```sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates``` <br />
+```curl -sL https://deb.nodesource.com/setup_10.x | sudo bash``` <br />
+```npm install``` <br />
+```npm start``` <br />
+More details can be found [here](https://computingforgeeks.com/installing-node-js-10-lts-on-ubuntu-18-04-16-04-debian-9/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

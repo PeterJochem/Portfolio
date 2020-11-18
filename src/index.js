@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 // import {BrowserRouter, Route} from 'react-router-dom';
 import { HashRouter, Route, Link, Switch} from "react-router-dom";
 import './index.css'; // Tell webpack that Button.js uses these styles
+import './DescriptionPages/Deep_RL_Description.css'
 import './portfolio.css';
 import Portfolio from "./portfolio";
 import Deep_RL_Description from "./DescriptionPages/Deep_RL_Description"
@@ -87,21 +88,16 @@ const page2 = {
 }
 
 
-//const node = document.getElementById("root");
 class Site extends React.Component {
 
-// Set the browser tab name
 componentDidMount(){
-    document.title = "Peter Jochem"
+	// Set the browser tab name
+	document.title = "Peter Jochem"
 }
 
 constructor(props) {
-    super(props);
-    this.state = {
-      someBoolean: false,
-      game_status: "game still on",
-    };
-  }
+	super(props);
+}
 
   render() {
     return (
@@ -125,18 +121,16 @@ constructor(props) {
 		    		More Projects
 		    	</Link>
 		        </div>	
-
 		</div>
 
 		<div className = "portfolio"> <Portfolio  pageNumber = {page1} />  </div>	
-
 		</div>	
 
     		)} />
 		
 	     <Route exact path='/projects2' render={() => (
                 <div>
-			 <div className = "Banner">
+			<div className = "Banner">
                         <div className = "bannerName"> Peter Jochem
                         </div>
                         <div className = "moreInfo">
@@ -154,15 +148,13 @@ constructor(props) {
                 </div>
                 
 		<div className = "portfolio"> <Portfolio  pageNumber = {page2} />  </div>		
-                
 		</div>
 
                 )} />
 
 	    	<Route exact path='/Deep_RL' render={() => (
-                        <div className = "portfolio"> <Deep_RL_Description /> </div>
+                        <div className = "Deep_RL_Description"> <Deep_RL_Description /> </div>
                 )} />
-
 
 	    	<Route exact path='/ResumePage' render={() => (
 

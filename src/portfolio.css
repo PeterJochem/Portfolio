@@ -1,6 +1,5 @@
 body {
 	background-color: #ccc33;
-
 	width: 100vw;
 	height: 100vh;
 	font: 50vw "Century Gothic", Futura, sans-serif;
@@ -22,7 +21,6 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://peterjochem.github.io/corkboard/The_GAN_Zoo.jpg");
 	background-size: cover;
 	font: 5vw "Century Gothic"
-
 }
 
 .bannerName {
@@ -35,8 +33,8 @@ body {
 }
 
 a {
-  color: white;
-  text-decoration: none;
+  	color: white;
+  	text-decoration: none;
 }
 
 .moreInfo {

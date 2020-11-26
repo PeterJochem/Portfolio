@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import ReactDOM from 'react-dom';
 // import {BrowserRouter, Route} from 'react-router-dom';
 import { HashRouter, Route, Link, Switch} from "react-router-dom";
-import './index.css'; // Tell webpack that Button.js uses these styles
+import './index.css'; 
 import './DescriptionPages/Deep_RL_Description.css'
 import './portfolio.css';
 import Portfolio from "./portfolio";
@@ -21,8 +21,9 @@ const page1 = {
     },
     {
         name: "Deep RL",
-        url: "https://github.com/PeterJochem/Deep_RL",
-        im_url: "https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/hopper_learned_policy_cropped.gif"
+        url: "./Portfolio#/Deep_RL",
+	github_url: "https://github.com/PeterJochem/Deep_RL",
+	im_url: "https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/hopper_learned_policy_cropped.gif"
     },
     {
         name: "Mobile Manipulator",

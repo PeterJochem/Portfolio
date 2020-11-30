@@ -40,9 +40,10 @@ export default class Deep_RL_Description extends React.Component {
                         </div> 
 	      	      </div>
 
-	      
-	     <ReactPlayer url="https://youtu.be/j5IvaLyz6Rs" controls="True" className="HeaderVideo" />
-	      
+	     <div className="HeaderVideoContainer" > 
+		     <ReactPlayer url="https://youtu.be/j5IvaLyz6Rs" controls="True" className="HeaderVideo" />
+	     </div>
+
 	     <div id="paragraph_div">
       	   
 	      <h1> Learning to Walk on Soft Ground </h1>
@@ -78,8 +79,8 @@ export default class Deep_RL_Description extends React.Component {
         </div>
 </div>
 
-			
-	      <h1> Learning to Walk On Soft Ground </h1>
+<h1> Learning to Walk On Soft Ground </h1>
+
 	      <p> In order to test Deep RL algorithms for the robot hopping on soft ground, I built a custom OpenAI gym environment. The OpenAI gym project was started in order to facilitate a common standard or benchmark for comparing RL algorithms. An agent has a set of actions it can take to influence the environments state and accumulate reward. The agent must learn how to take actions which maximize its cumulative reward over time. One of the more simple gym environments is the pendulum environment. It features a simple pendulum that the agent must learn how to invert. At each time step, the agent recieves the pendulums angle and can choose to either exert a unit of positive torque or negative torque. Although the problem can be easily solved with a PID controller, it serves as a simple test to see if your agent is learning. I built my gym in <a className="paper_link" href="https://pybullet.org/wordpress/"> PyBullet </a>, an open source physics engine. It features a hopping robot with an open chain leg. What makes my environment diffrent is that I use my model of the soft ground to govern the ground reaction forces and torques on the robots foot. In PyBullet, I track where the foot is, and when it is in contact with the granular material, I apply the ground reaction forces and torques that the model predicts. This allows me to have a highly tractable and realistic simulation of soft ground. Below is an image of what the environments looks like.
 </p>
 	
@@ -99,29 +100,26 @@ export default class Deep_RL_Description extends React.Component {
 	<div class="column">
   		<img src="https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/cheetah2.gif" alt="Learned Gait in OpenAI Gym" className="OpenAI_gym_results_gif2"/>
  	</div>
-</div> 
+</div>
 
 <p className="p_describe_pyBullet_ddpg">
-	Once I had validated that my implementation of DDPG worked using the OpenAI teams environments, I applied the algorithm to the new environment in PyBullet. My custom       
+	Once I had validated my implementation of DDPG using the OpenAI teams environments, I applied the algorithm to the new environment in PyBullet. My custom hopping robot environment approximates Dans robot. As of 2020, PyBullet does not support granular materials. So, I used the ground model from part one to simulate the soft ground in PyBullet. This allowed me to have a computationally tractable model of soft ground which I could use for reinforcement learning. I used both DDPG and TD3 in the new environment. Below, on the left, are some the learned gaits. Below on the right is a visualization of the soft ground I later added.             
 </p>
 
 
 <div class="row">
-	<div class="column_for_pybullet_gif">
-                        <img src="https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/h3pper_DDPG2.gif" alt="Custom PyBullet Hopping Robot"/>
+        <div class="column">
+                <img src="https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/h3pper_DDPG2.gif" alt="Learned Gaits in Gym Environments"/>
         </div>
-</div>	
+        <div class="column">
+                <img src="https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/h3pper/gym-hopping_robot/images/hopper_in_sand.png" alt="Learned Gait in OpenAI Gym" className="OpenAI_gym_results_gif2"/>
+        </div>
+</div>
+
 
 </div>
 </div>
       )
    }
 }
-
-// Type Check properties here
-//Deep_RL_Description.propTypes = {
-//};
-//Deep_RL_Description.defaultProps = {
-//};
-
 

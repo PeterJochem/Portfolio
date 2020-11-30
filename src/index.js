@@ -1,15 +1,16 @@
 import React from "react";
-import { render } from "react-dom";
 import ReactDOM from 'react-dom';
-// import {BrowserRouter, Route} from 'react-router-dom';
-import { HashRouter, Route, Link, Switch} from "react-router-dom";
+import {render} from "react-dom";
+import {HashRouter, Route, Link, Switch} from "react-router-dom";
 import './index.css'; 
 import './DescriptionPages/Deep_RL_Description.css'
+import './DescriptionPages/ROS_Navigation_Stack_Description'
+// import './DescriptionPages/Deep_RL_Description.css'
 import './portfolio.css';
 import Portfolio from "./portfolio";
 import Deep_RL_Description from "./DescriptionPages/Deep_RL_Description"
+import ROS_Navigation_Stack_Description from "./DescriptionPages/ROS_Navigation_Stack_Description"
 import App from "./App.js";
-//import "./corkboard.css"
 
 const page1 = {
   projects: [
@@ -21,7 +22,7 @@ const page1 = {
     },
     {
         name: "Deep RL",
-        url: "./Portfolio#/Deep_RL",
+        url: "https://peterjochem.github.io/Portfolio#/Deep_RL",
 	github_url: "https://github.com/PeterJochem/Deep_RL",
 	im_url: "https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/hopper_learned_policy_cropped.gif"
     },
@@ -155,6 +156,10 @@ constructor(props) {
 
 	    	<Route exact path='/Deep_RL' render={() => (
                         <div className = "Deep_RL_Description"> <Deep_RL_Description /> </div>
+                )} />
+
+	    	<Route exact path='/ROS_Navigation_Stack' render={() => (
+                        <div className = "ROS_Navigation_Stack_Description"> <ROS_Navigation_Stack_Description /> </div>
                 )} />
 
 	    	<Route exact path='/ResumePage' render={() => (

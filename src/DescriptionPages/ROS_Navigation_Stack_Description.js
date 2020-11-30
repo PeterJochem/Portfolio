@@ -9,18 +9,18 @@ import '../portfolio.css';
 import './../portfolio.css';
 import './../index.css';
 
-export default class Deep_RL_Description extends React.Component {
+export default class ROS_Navigation_Stack_Description extends React.Component {
        constructor(props) {
        		super(props);
                 this.componentDidMount = this.componentDidMount.bind(this);
         }
 	
+	// Set the browser tab name
 	componentDidMount(){	   	
 		document.body.style.backgroundImage = null;	
 	}
 	
-	state = { 
-	}
+	state = {}
    render () {                                   
       return ( 
 		      <div className = "Deep_RL_Description">
@@ -40,17 +40,21 @@ export default class Deep_RL_Description extends React.Component {
                         </div> 
 	      	      </div>
 
-	      
-	     <ReactPlayer url="https://youtu.be/j5IvaLyz6Rs" controls="True" className="HeaderVideo" />
-	      
-	     <div id="paragraph_div">
+	      {/*
+	      <div className="HeaderVideoContainer">
+	      	<ReactPlayer url="https://www.youtube.com/watch?v=-Q_36Qi5CVc" className="HeaderVideo" />
+	      </div>
+	      */}
+
+	      <div id="paragraph_div">
       	   
+	     <p> Insert a grid of images/gifs</p>
+
 	      <h1> Learning to Walk on Soft Ground </h1>
 	      <p> This project was motivated by the work of Dan Lynch. He studies optimal control algorithms for legged robots on yielding terrain. Most of the work on legged robotics assumes the ground is a rigid body, but nature is full of materials that exhibit more complicated dynamics. Dans algorithms require a model of how a robots feet interact with the ground. I worked with Juntao He to develop discrete element method (DEM) simulations of a robots feet intruding into a bed of granular material. We then trained a neural network to map the state of the foot to the ground reaction forces and torques exerted by the granular material. This allows us to have a model of the ground which can then be used by Dans optimal control algorithms. </p>
 
 	      <p>
-
-	      	The second part of the project involved learning about reinforcement learning, succesively implementing more complicated deep reinforcement learning algorithms, and eventually trying to solve Dans problem via RL. I started out reading Sutton and Barto (link) and building intution about reinforcement learning problems. I implemented <a className="paper_link" href="https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf"> DeepQ Learning </a>, and <a className="paper_link" href="https://arxiv.org/abs/1509.06461"> Double DeepQ Learning </a> in order to build up to more complicated temporal diffrence learning algorithms. I then implemented <a className="paper_link" href="https://arxiv.org/abs/1509.02971"> Deep Deterministic Policy Gradients </a> and then <a className="paper_link" href="https://arxiv.org/pdf/1802.09477.pdf"> TD3 </a>. Finally, I tried to get a working implementation of a <a className="paper_link" href="https://arxiv.org/abs/1910.02812"> Policies Modulating Trajectories Generators </a> architecture for our hopping robot problem.   
+	      	The second part of the project involved learning about reinforcement learning, succesively implementing more complicated deep reinforcement learning algorithms, and eventually trying to solve Dans problem via RL. I started out reading Sutton and Barto (link) and building intution about reinforcement learning problems. I implemented DeepQ Learning, and Double DeepQ Learning in order to build up to more complicated temporal diffrence learning algorithms. I then implemented Deep Determinisitc Policy Gradients and then TD3. Finally, I tried to get a working implementation of a Policies Modulating Trajectories Generators (link) architecture for our hopping robot problem.   
 	      </p>
 
 	      <h1> Learning a Model of the Ground </h1>
@@ -78,15 +82,14 @@ export default class Deep_RL_Description extends React.Component {
         </div>
 </div>
 
-			
+	
+	     			
+
+
+		
 	      <h1> Learning to Walk On Soft Ground </h1>
-	      <p> In order to test Deep RL algorithms for the robot hopping on soft ground, I built a custom OpenAI gym environment. The OpenAI gym project was started in order to facilitate a common standard or benchmark for comparing RL algorithms. An agent has a set of actions it can take to influence the environments state and accumulate reward. The agent must learn how to take actions which maximize its cumulative reward over time. One of the more simple gym environments is the pendulum environment. It features a simple pendulum that the agent must learn how to invert. At each time step, the agent recieves the pendulums angle and can choose to either exert a unit of positive torque or negative torque. Although the problem can be easily solved with a PID controller, it serves as a simple test to see if your agent is learning. I built my gym in <a className="paper_link" href="https://pybullet.org/wordpress/"> PyBullet </a>, an open source physics engine. It features a hopping robot with an open chain leg. What makes my environment diffrent is that I use my model of the soft ground to govern the ground reaction forces and torques on the robots foot. In PyBullet, I track where the foot is, and when it is in contact with the granular material, I apply the ground reaction forces and torques that the model predicts. This allows me to have a highly tractable and realistic simulation of soft ground. Below is an image of what the environments looks like.
-</p>
-	
-	
-	<p>
-	      In high level terms, the agents goal is move in the postive x-direction. I found that the exact details of the agents reward function made a huge diffrence in the agents outcome. Roughly speaking, I rewarded the agent for having a larger x-coordinate, a positive x-velocity, and not falling over. I applied both <a className="paper_link" href="https://arxiv.org/abs/1509.02971"> Deep Deterministic Policy Gradients </a> and <a className="paper_link" href="https://arxiv.org/pdf/1802.09477.pdf"> TD3 </a> to the hopping robot and got interesting results! The agent decided to lock its leg joints and use its foot to generate ground reaction forces. Although this is technically a viable policy, it is far from the natural gait we might have hoped for.                        
-	</p>
+	      <p> In order to test Deep RL algorithms for the robot hopping on soft ground, I built a custom OpenAI gym environment. The OpenAI gym project was started in order to facilitate a common standard or benchmark for comparing RL algorithms. An agent has a set of actions it can take to influence the environments state and accumulate reward. The agent must learn how to take actions which maximize its cumulative reward over time. One of the more simple gym environments is the pendulum environment. It features a simple pendulum that the agent must learn how to invert. At each time step, the agent recieves the pendulums angle and can choose to either exert a unit of positive torque or negative torque. Although the problem can be easily solved with a PID controller, it serves as a simple test to see if your agent is learning. I built my gym in <a className="paper_link" href="https://pybullet.org/wordpress/"> PyBullet </a>, an open source physics engine. It features a hopping robot with an open chain leg. In high level terms, the agents goal is move in the postive x-direction. I found that the exact details of the agents reward function made a huge diffrence in the agents outcome. Roughly speaking, I rewarded the agent for having a larger x-coordinate, a positive x-velocity, and not falling over. I applied both <a className="paper_link" href="https://arxiv.org/abs/1509.02971"> Deep Deterministic Policy Gradients </a> and <a className="paper_link" href="https://arxiv.org/pdf/1802.09477.pdf"> TD3 </a> to the hopping robot and got interesting results! The agent decided to lock its leg joints and use its foot to generate ground reaction forces. Although this is technically a viable policy, it is far from the natural gait we might have hoped for.                        
+	      </p>
 
 	      <p>
 		<a className="paper_link" href="https://arxiv.org/abs/1509.02971"> Deep Deterministic Policy Gradients </a> (DDPG) is one of the state of the art RL algorithms for continous action spaces. Most of the work in RL has focused on agents who have a discrete number of actions they can take. Some of these discrete action space methods include <a className="paper_link" href="https://en.wikipedia.org/wiki/Q-learning"> Q-Learning </a>, <a className="paper_link" href="https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf"> DeepQ Networks </a>, and <a className="paper_link" href="https://arxiv.org/abs/1509.06461"> Double DeepQ Learning </a>. In our case though, we want to learn how to apply torques to each of the robots motors. We could discretize the set of allowable motor torques but in practice, this does not work well. Instead, we need to use an algorithm designed for continous action spaces. I implemented both DDPG and TD3 for the hopping robot. In order to facilitate testing of DDPG and TD3, I also tried them on the Cheetah and Hopper Environments published by the OpenAI team. Both feature a legged robot that must learn how to locomote by applying a set of motor torques on its joints. This helped me validate the RL algorithms and was also a lot of fun. Below are some of the gaits that the agents learned.         
@@ -99,21 +102,12 @@ export default class Deep_RL_Description extends React.Component {
 	<div class="column">
   		<img src="https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/cheetah2.gif" alt="Learned Gait in OpenAI Gym" className="OpenAI_gym_results_gif2"/>
  	</div>
-</div> 
-
-<p className="p_describe_pyBullet_ddpg">
-	Once I had validated that my implementation of DDPG worked using the OpenAI teams environments, I applied the algorithm to the new environment in PyBullet. My custom       
-</p>
-
-
-<div class="row">
-	<div class="column_for_pybullet_gif">
-                        <img src="https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/h3pper_DDPG2.gif" alt="Custom PyBullet Hopping Robot"/>
-        </div>
-</div>	
-
 </div>
-</div>
+
+	      <img src=" https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/h3pper_DDPG2.gif" alt="AI Gym Hopping Robot" className="intrusion_gif" />
+		
+		</div>
+	   </div>	      
       )
    }
 }

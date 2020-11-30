@@ -25,21 +25,35 @@ p {
 	font-family: "Times New Roman", Times, serif;
 }
 
+.p_describe_pyBullet_ddpg {
+	text-align: left;
+        font-size: 1.3vw;
+        text-indent: 2vw;
+        font-family: "Times New Roman", Times, serif;
+	margin-top: 6vh;
+	vertical-align: top;
+}
+
 h1 { 
 	font-size: 2.5vw;
 	font-family: "Times New Roman", Times, serif;
 }
 
 .HeaderVideoContainer {
-        width: 100%;
+	width: 100%;
 	height: 50%;
-        vertical-align: top;
 }
 
 .HeaderVideo {
-	display: flex;
-  	justify-content: center;
-	align-items: center;
+	padding-top: 0%;
+	margin-left: auto;
+    	margin-right: auto;
+	padding-bottom: 5%;
+}
+
+iframe { 
+	vertical-align: top;
+	padding-top: 5vh;
 }
 
 .results_image {
@@ -98,6 +112,21 @@ h1 {
   width: 50%;
   height: 80%;  
 }
+
+.column_for_pybullet_gif {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+  width: 100%;
+}
+
+.column_for_pybullet_gif img {
+  margin-top: 5vh;
+  vertical-align: top;
+  width: 50%;
+  height: 80%;
+}
+
 
 .TDynamics_Link[href], .RFT_Link[href], .paper_link[href] { 
 	color: blue;

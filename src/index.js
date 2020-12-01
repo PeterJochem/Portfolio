@@ -46,10 +46,10 @@ const page1 = {
         url: "https://github.com/PeterJochem/Sawyer_Ping_Pong",
         im_url: "https://peterjochem.github.io/myImages/ping_trajectory.png"
      },
-     {
-        name: "DeepQ Learning",
-        url: "https://github.com/PeterJochem/Grid_World_RL",
-        im_url: "https://peterjochem.github.io/myImages/NN_Large.png"
+    {
+        name: "GAN",
+        url: "https://github.com/PeterJochem/MNIST_GAN",
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/GAN.gif"
     },
     {
        	name: "Triple Pendulum",
@@ -75,11 +75,11 @@ const page2 = {
         name: "Canny Edge Detector",
         url: "https://github.com/PeterJochem/CannyEdgeDetector",
         im_url: "https://peterjochem.github.io/myImages/Lena_Processed.png"
-    },
+    }, 
     {
-        name: "GAN",
-        url: "https://github.com/PeterJochem/MNIST_GAN",
-        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/GAN.gif"
+        name: "DeepQ Learning",
+        url: "https://github.com/PeterJochem/Grid_World_RL",
+        im_url: "https://peterjochem.github.io/myImages/NN_Large.png"
     },
     {
         name: "Neural Network Snake",

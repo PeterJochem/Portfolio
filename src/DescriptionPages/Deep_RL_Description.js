@@ -47,7 +47,7 @@ export default class Deep_RL_Description extends React.Component {
 	     <div id="paragraph_div">
       	   
 	      <h1> Learning to Walk on Soft Ground </h1>
-	      <p> This project was motivated by the work of <a href="https://robotics.northwestern.edu/people/profiles/students/lynch-dan.html" className="paper_link"> Dan Lynch</a>. He studies optimal control algorithms for legged robots on yielding terrain. Most of the work on legged robotics assumes the ground is a rigid body, but nature is full of materials that exhibit more complicated dynamics. Dan&apos;s algorithms require a model of how a robot&apos;s feet interact with the ground. I worked with Juntao He to develop discrete element method (DEM) simulations of a robot&apos;s feet intruding into a bed of granular material. We then trained a neural network to map the state of the foot to the ground reaction forces and torques exerted by the granular material. This allows us to have a model of the ground which can then be used by Dan&apos;s optimal control algorithms. </p>
+	      <p> This project was motivated by the work of <a href="https://robotics.northwestern.edu/people/profiles/students/lynch-dan.html" className="paper_link"> Dan Lynch</a>. He studies optimal control algorithms for legged robots on yielding terrain. Most of the work on legged robotics assumes the ground is a rigid body, but nature is full of materials that exhibit more complicated dynamics. Dan&apos;s algorithms require a model of how a robot&apos;s feet interact with the ground. I worked with Juntao He to develop discrete element method (DEM) simulations of a robot&apos;s feet intruding into a bed of granular material. We then trained a neural network to map the state of the foot to the ground reaction forces and torques exerted by the granular material. This allows us to have a model of the ground which can then be used by Dan&apos;s optimal control algorithms. For more technical details, feel free to check out the <a href="https://github.com/PeterJochem/Deep_RL" className="paper_link"> Github repo</a>. A more in depth video describing the project can also be found <a href="https://www.youtube.com/watch?v=pYh5rTPOqvk" className="paper_link">here </a>. </p>
 
 	      <p>
 
@@ -116,6 +116,9 @@ export default class Deep_RL_Description extends React.Component {
         </div>
 </div>
 
+<p className="p_describe_pyBullet_pmtg">
+	I then tried to implement a <a className="paper_link" href="https://arxiv.org/abs/1910.02812"> Policies Modulating Trajectory Generators </a> architecture for the hopping robot on soft ground. This architecture allows us to incorporate prior insight about what the robot&apos;s desired trajectory should be. The agent learns to control a new dynamical system, that of the robot and its controller rather than the robot directly. This results in learning good policies much faster. We modified Dan&apos;s optimal open-loop controller to be our trajectory generator. At each time step, the agent can modify parameters that define the open loop controller as well as add modulation terms to the ouput of the trajectory generator. In our case, our agent has a trajectory generator which is very well suited for the problem at hand but the trajectory generator need not be so well engineered. The original PMTG paper used a relatively approximate trajectory generator and still achieved good results. Think of the the trajectory generator as being near the desired solution and then letting the agent learn how to modify it to work fully. Unfortunately, I get the software setup but could not get the entire system to work!                             
+</p>
 
 </div>
 </div>

@@ -93,8 +93,7 @@ const page2 = {
 class Site extends React.Component {
 
 componentDidMount(){
-	// Set the browser tab name
-	document.title = "Peter Jochem"
+	document.title = "Peter Jochem" // Set the browser tab name
 }
 
 constructor(props) {
@@ -179,5 +178,3 @@ constructor(props) {
 export default Site;
 
 ReactDOM.render( <App />, document.getElementById('root') );
-// ReactDOM.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>, document.getElementById("root"));
-

@@ -49,7 +49,7 @@ const page1 = {
     {
         name: "GAN",
         url: "https://github.com/PeterJochem/MNIST_GAN",
-        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/GAN.gif"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/GAN_downsampled.gif"
     },
     {
        	name: "Triple Pendulum",

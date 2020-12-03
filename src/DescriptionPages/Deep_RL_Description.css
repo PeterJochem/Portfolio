@@ -5,262 +5,150 @@ body {
 	font: 50vw "Century Gothic", Futura, sans-serif;
 	text-align: center;
 }
-
 #root {
 	width: 100vw;
 	height: 100vh;
 }
-
 #paragraph_div {
 	width: 60%;
 	height: 100%;
 	margin-right: auto; 
 	margin-left: auto;
 }
-
 p {
 	text-align: left;
 	font-size: 2.3%;
 	text-indent: 5%;
 	font-family: "Times New Roman", Times, serif;
-	display: block;
 }
-
 .p_describe_pyBullet_ddpg {
 	text-align: left;
         font-size: 2.3%;
         text-indent: 5%;
         font-family: "Times New Roman", Times, serif;
-	margin-top: 5%;
+	margin-top: 4.5%;
 	vertical-align: top;
-	display: block;
 }
-
-.p_describe_pyBullet_pmtg {
-        text-align: left;
-        font-size: 2.3%;
-        text-indent: 5%;
-        font-family: "Times New Roman", Times, serif;
-        margin-top: 5%;
-        vertical-align: top;
-}
-
-h1 {
+h1 { 
 	font-size: 5.5%;
 	font-family: "Times New Roman", Times, serif;
-	display: block;
 }
-
 .HeaderVideoContainer {
-	width: 70%;
-	height: auto;
+	width: 30%;
+	height: 35%;
 	display: flex;
         justify-content: center;
 	margin-right: auto;
         margin-left: auto;
 }
-
 .HeaderVideo {
 	padding-top: 0%;
-	padding-bottom: 0.0%;
+	padding-bottom: 5%;
 	width: 100%;
-	height: 100%;
 	margin-right: auto;
-        margin-left: auto;
-	display: flex;
-	/*position: static;*/
+        margin-left: auto;	
 }
-
 iframe { 
 	vertical-align: top;
-	padding-top: 5%;
+	padding-top: 5vh;
 	display: flex;
 	justify-content: center;	
-	width: 75%;
-	height: 80%;
+	width: 100%;
+	height: 75%;
 	margin-right: auto;
         margin-left: auto;
 }
-
 .results_image {
 	width: 75vw;
 }
-
 .results_gif {
 	width: 50vw;
 }
-
 .intrusion_gif { 
 	width: 40vw;
 	height: 50vh;
 }
-
 .kbd-navigation .square:focus {
 	background: #ddd;
 }
-
 .topnav {
  	background-color: #333;
  	overflow: hidden;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
   height: 30%;
-  width: auto;
 }
-
 .column {
   flex: 25%;
   max-width: 100%;
   padding: 0 4px;
   width: 100%;
-  display: block;
 }
-
 .column img {
   margin-top: 1vh;
   vertical-align: top;
   width: 100%;
   height: auto;
-  display: block;
 }
-
 .column_for_intrusion_gif {
   flex: 25%;
   max-width: 100%;
   padding: 0 4px;
   width: 100%;
 }
-
 .column_for_intrusion_gif img {
   margin-top: 1vh;
   vertical-align: top;
   width: 50%;
   height: 80%;  
 }
-
 .column_for_pybullet_gif {
   flex: 25%;
   max-width: 100%;
   padding: 0 4px;
   width: 100%;
 }
-
 .column_for_pybullet_gif img {
   margin-top: 5vh;
   vertical-align: top;
   width: 50%;
   height: 80%;
 }
-
-
 .TDynamics_Link[href], .RFT_Link[href], .paper_link[href] { 
 	color: blue;
 }
-
-/* IPhoneX Portrait */
-@media only screen and (min-width: 374px) and (max-width: 376px) {
-iframe {
-        vertical-align: top;
-        padding-top: 5vh;
-        display: flex;
-        justify-content: center;
-        width: 60vw;
-        height: 27.5vh;
-        margin-right: auto;
-        margin-left: auto;
-	position: static;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  height: 10%;
-}
-
-.p_describe_pyBullet_ddpg {
-        text-align: left;
-        font-size: 2.3%;
-        text-indent: 5%;
-        font-family: "Times New Roman", Times, serif;
-        margin-top: 0.001%;
-        vertical-align: top;
-}
-.p_describe_pyBullet_pmtg {
-        text-align: left;
-        font-size: 2.3%;
-        text-indent: 5%;
-        font-family: "Times New Roman", Times, serif;
-        margin-top: 5%;
-        vertical-align: top;
-}
-}
-
-/* IPhoneX Landscape */
-@media only screen and (min-width: 811px) and (max-width: 813px) {
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 621px) {
 iframe {
         vertical-align: top;
         padding-top: 5vh;
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 50.5%;
+        height: 25vh;
         margin-right: auto;
         margin-left: auto;
-        position: static;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-  height: 35%;
+  height: 12%;
 }
-
 .p_describe_pyBullet_ddpg {
         text-align: left;
         font-size: 2.3%;
         text-indent: 5%;
         font-family: "Times New Roman", Times, serif;
-        margin-top: 4%;
+        margin-top: 1.0%;
         vertical-align: top;
 }
-.p_describe_pyBullet_pmtg {
-        text-align: left;
-        font-size: 2.3%;
-        text-indent: 5%;
-        font-family: "Times New Roman", Times, serif;
-        margin-top: 4%;
-        vertical-align: top;
 }
 
-.HeaderVideoContainer {
-        width: 30%;
-        height: 55%;
-        display: flex;
-        justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
-}
-
-.HeaderVideo {
-        padding-top: 0%;
-        padding-bottom: 0.0%;
-        width: 100%;
-        height: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        position: static;
-}
-}
-
-
-
-/* Smartphones (landscape) ----------- 
+/* Smartphones (landscape) ----------- */
 @media only screen and (max-height : 321px) {
 iframe {
         vertical-align: top;
@@ -289,7 +177,7 @@ iframe {
         vertical-align: top;
 }
 }
-*/
+
 
 
 

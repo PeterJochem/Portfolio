@@ -57,6 +57,7 @@ iframe {
 	height: 75%;
 	margin-right: auto;
         margin-left: auto;
+	display: inline-block;
 }
 .results_image {
 	width: 75vw;

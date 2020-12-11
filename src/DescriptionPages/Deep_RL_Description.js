@@ -41,7 +41,7 @@ export default class Deep_RL_Description extends React.Component {
 	      	      </div>
 
 	     <div className="HeaderVideoContainer" > 
-		     <ReactPlayer url="https://youtu.be/j5IvaLyz6Rs" controls="True" className="HeaderVideo" />
+		     <ReactPlayer url="https://www.youtube.com/watch?v=llKHSVy_aUU&feature=youtu.be" controls="True" className="HeaderVideo" />
 	     </div>
 
 	     <div id="paragraph_div">

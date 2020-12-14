@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import {render} from "react-dom";
 import {HashRouter, Route, Link, Switch} from "react-router-dom";
+import {Document, Page} from 'react-pdf';
 import './index.css'; 
 import './DescriptionPages/Deep_RL_Description.css'
 import './DescriptionPages/ROS_Navigation_Stack_Description'
@@ -11,6 +12,7 @@ import Portfolio from "./portfolio";
 import Deep_RL_Description from "./DescriptionPages/Deep_RL_Description"
 import ROS_Navigation_Stack_Description from "./DescriptionPages/ROS_Navigation_Stack_Description"
 import App from "./App.js";
+import resumePDF from "./Resume.pdf";
 
 const page1 = {
   projects: [
@@ -175,11 +177,10 @@ constructor(props) {
                 )} />
 
 	    	<Route exact path='/ResumePage' render={() => (
-
-                <div className = "resumeBackground">
-		    	<iframe id = "myResumeFrame" src="http://docs.google.com/viewer?url=https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf&embedded=true" width="600" height="780" frameborder="0"></iframe>
-		    </div>
-                )} />
+		 <object data="https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf" type="application/pdf" width="100%" height="100%">
+      <p>Alternative text - include a link <a href="https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf">to the PDF!</a></p>
+  </object>
+		)} />
 	  
 	    
 	  </div>

@@ -129,9 +129,9 @@ constructor(props) {
 		  	</div>
 		   	<div className = "moreInfo">
 		  	
-			<Link className = "myResumeLink" to ="/ResumePage" >
+			<a className = "myResumeLink" href="https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf" >
                                 Resume
-                        </Link>
+                        </a>
 
 		  	<Link className = "moreProjectsLink" to ="/projects2" >  
 		    		More Projects
@@ -176,11 +176,6 @@ constructor(props) {
                         <div className = "ROS_Navigation_Stack_Description"> <ROS_Navigation_Stack_Description /> </div>
                 )} />
 
-	    	<Route exact path='/ResumePage' render={() => (
-		 <object data="https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf" type="application/pdf" width="100%" height="100%">
-      <p>Alternative text - include a link <a href="https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf">to the PDF!</a></p>
-  </object>
-		)} />
 	  
 	    
 	  </div>

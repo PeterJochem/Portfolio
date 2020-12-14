@@ -30,10 +30,10 @@ export default class Deep_RL_Description extends React.Component {
                         	</div>
                   
 	      		<div className = "moreInfo">
-                        	<Link className = "myResumeLink" to ="/ResumePage" >
-                                	Resume
-                        	</Link>
-
+				<a className = "myResumeLink" href="https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf" >
+                               		Resume
+                        	</a>
+			
                         	<Link className = "moreProjectsLink" to ="/projects2" >
                                 	More Projects
                         	</Link>

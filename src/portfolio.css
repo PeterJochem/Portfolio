@@ -151,6 +151,27 @@ div {
 	padding-bottom: 100%;
 }
 
+.grid-container {
+        display: grid;
+        /* grid-gap: 20px; */
+        grid-gap: 1vw;
+        /* This puts 4 columns in a row */
+        grid-template-columns: auto auto auto auto;
+        font: 1.2vw "Century Gothic", Futura, sans-serif;
+        text-align: center;
+        font-weight: 600;
+
+        margin-left: auto;
+        margin-right: auto;
+        /*width: 80%;
+        height: 80%;*/
+        justify-items: center;
+
+        /* This forces the grid elements to be square */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 100px) {
 .grid-container {
@@ -175,7 +196,7 @@ div {
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
+@media only screen and (min-width : 319px) and (max-width: 1024px) {
 /* Styles */
 .grid-container {
 	display: grid;
@@ -194,7 +215,7 @@ div {
 	justify-items: center;
 	
 	/* This forces the grid elements to be square */
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 }
 }  
 

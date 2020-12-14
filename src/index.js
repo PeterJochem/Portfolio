@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import {render} from "react-dom";
 import {HashRouter, Route, Link, Switch} from "react-router-dom";
-import {Document, Page} from 'react-pdf';
 import './index.css'; 
 import './DescriptionPages/Deep_RL_Description.css'
 import './DescriptionPages/ROS_Navigation_Stack_Description'
@@ -12,7 +11,6 @@ import Portfolio from "./portfolio";
 import Deep_RL_Description from "./DescriptionPages/Deep_RL_Description"
 import ROS_Navigation_Stack_Description from "./DescriptionPages/ROS_Navigation_Stack_Description"
 import App from "./App.js";
-import resumePDF from "./Resume.pdf";
 
 const page1 = {
   projects: [
@@ -151,12 +149,12 @@ constructor(props) {
                         </div>
                         <div className = "moreInfo">
 
-		     	<Link className = "myResumeLink" to ="/ResumePage" >
-                        	Resume
-			</Link>
+		     	<a className = "myResumeLink" href="https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf" >
+                                Resume
+                        </a>
 
 		     	<Link className = "moreProjectsLink" to ="/" >
-                                More Projects
+                                Main
                         </Link>
 		     	
                         </div>

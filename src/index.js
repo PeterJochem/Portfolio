@@ -47,10 +47,10 @@ const page1 = {
 	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/chess.gif"
     }, 
     {
-        name: "Sawyer Ping Pong",
-        url: "https://github.com/PeterJochem/Sawyer_Ping_Pong",
-        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/ping_trajectory.png",
-	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/ping_trajectory.png"
+        name: "GoBot",
+        url: "https://github.com/PeterJochem/Go_Bot",
+        im_url: "",
+	hover_url: ""
      },
     {
         name: "GAN",
@@ -98,7 +98,13 @@ const page2 = {
         url: "https://github.com/PeterJochem/Snake",
         im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/Snake.png",
 	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/Snake.png"
-    }
+    },
+    {
+        name: "Sawyer Ping Pong",
+        url: "https://github.com/PeterJochem/Sawyer_Ping_Pong",
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/ping_trajectory.png",
+        hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/ping_trajectory.png"
+     }
   ]
 }
 

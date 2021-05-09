@@ -18,8 +18,8 @@ const page1 = {
     {
         name: "ROS Navigation",
         url: "https://github.com/PeterJochem/Turtlebot_Navigation",
-        im_url: "https://raw.githubusercontent.com/PeterJochem/Turtlebot_Navigation/master/images/tbot_pentagon.gif",
-    	hover_url: "https://raw.githubusercontent.com/PeterJochem/Turtlebot_Navigation/master/images/tbot_pentagon.gif"
+	im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/tbot_pentagon.gif",
+    	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/tbot_pentagon.gif"
     },
     {
         name: "Deep RL",
@@ -31,26 +31,26 @@ const page1 = {
     {
         name: "Mobile Manipulator",
         url: "https://github.com/PeterJochem/Mobile_Manipulator",
-        im_url: "https://peterjochem.github.io/myImages/kuka.gif",
-	hover_url: "https://peterjochem.github.io/myImages/kuka.gif"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/kuka.gif",
+	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/kuka.gif"
     },
     {
         name: "Terminator",
         url: "https://github.com/ME495-EmbeddedSystems/final-project-terminator",
-        im_url: "https://peterjochem.github.io/myImages/terminator.png",
-	hover_url: "https://peterjochem.github.io/myImages/terminator.png"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/terminator.png",
+	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/terminator.png"
      },
      {
         name: "Chess AI",
         url: "https://github.com/PeterJochem/Chess_AI",
-        im_url: "https://peterjochem.github.io/myImages/chess.gif",
-	hover_url: "https://peterjochem.github.io/myImages/chess.gif"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/chess.gif",
+	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/chess.gif"
     }, 
     {
         name: "Sawyer Ping Pong",
         url: "https://github.com/PeterJochem/Sawyer_Ping_Pong",
-        im_url: "https://peterjochem.github.io/myImages/ping_trajectory.png",
-	hover_url: "https://peterjochem.github.io/myImages/ping_trajectory.png"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/ping_trajectory.png",
+	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/ping_trajectory.png"
      },
     {
         name: "GAN",
@@ -61,8 +61,8 @@ const page1 = {
     {
        	name: "Triple Pendulum",
         url: "https://github.com/PeterJochem/TriplePendulum",
-        im_url: "https://peterjochem.github.io/myImages/pend.gif",
-	hover_url: "https://peterjochem.github.io/myImages/pend.gif"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/pend.gif",
+	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/pend.gif"
     },
 ]
 }
@@ -72,32 +72,32 @@ const page2 = {
     {
         name: "RRT",
         url: "https://github.com/PeterJochem/RRT",
-        im_url: "https://peterjochem.github.io/myImages/all_Points_3.png",
-    	hover_url: "https://peterjochem.github.io/myImages/all_Points_3.png"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/all_Points_3.png",
+    	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/all_Points_3.png"
     },
      {
         name: "CBirch 97",
         url: "https://github.com/PeterJochem/CBirch_97",
-        im_url: "https://peterjochem.github.io/myImages/CBirch97.gif",
-	hover_url: "https://peterjochem.github.io/myImages/CBirch97.gif"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/CBirch97.gif",
+	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/CBirch97.gif"
     },
     {
         name: "Canny Edge Detector",
         url: "https://github.com/PeterJochem/CannyEdgeDetector",
-        im_url: "https://peterjochem.github.io/myImages/Lena_Processed.png",
-	hover_url: "https://peterjochem.github.io/myImages/Lena_Processed.png"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/Lena_Processed.png",
+	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/Lena_Processed.png"
     }, 
     {
         name: "DeepQ Learning",
         url: "https://github.com/PeterJochem/Grid_World_RL",
-        im_url: "https://peterjochem.github.io/myImages/NN_Large.png",
-	hover_url: "https://peterjochem.github.io/myImages/NN_Large.png"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/NN_Large.png",
+	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/NN_Large.png"
     },
     {
         name: "Neural Network Snake",
         url: "https://github.com/PeterJochem/Snake",
-        im_url: "https://peterjochem.github.io/myImages/Snake.png",
-	hover_url: "https://peterjochem.github.io/myImages/Snake.png"
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/Snake.png",
+	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/Snake.png"
     }
   ]
 }

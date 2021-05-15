@@ -22,6 +22,12 @@ const page1 = {
     	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/tbot_pentagon.gif"
     },
     {
+        name: "GoBot",
+        url: "https://github.com/PeterJochem/Go_Bot",
+        im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/GoBot_Demo.gif",
+        hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/GoBot_Demo.gif"
+     },
+    {
         name: "Deep RL",
         url: "https://peterjochem.github.io/Portfolio#/Deep_RL",
 	github_url: "https://github.com/PeterJochem/Deep_RL",
@@ -46,12 +52,6 @@ const page1 = {
         im_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/chess.gif",
 	hover_url: "https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/images/chess.gif"
     }, 
-    {
-        name: "GoBot",
-        url: "https://github.com/PeterJochem/Go_Bot",
-        im_url: "",
-	hover_url: ""
-     },
     {
         name: "GAN",
         url: "https://github.com/PeterJochem/MNIST_GAN",

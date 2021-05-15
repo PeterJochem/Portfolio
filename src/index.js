@@ -133,7 +133,7 @@ constructor(props) {
 		  	</div>
 		   	<div className = "moreInfo">
 		  	
-			<a className = "myResumeLink" href="https://raw.githubusercontent.com/PeterJochem/PeterJochem.github.io/6331c077619a0b5593287d0fcead9a932102b569/Resume.pdf" >
+			<a className = "myResumeLink" href="https://github.com/PeterJochem/Portfolio/blob/master/src/Resume.pdf" >
                                 Resume
                         </a>
 
